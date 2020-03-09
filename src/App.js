@@ -7,6 +7,7 @@ import {
   Link,
 } from "react-router-dom";
 import MainView from './views/main-view';
+import style from './assets/style.css'
 
 function App() {
   return (

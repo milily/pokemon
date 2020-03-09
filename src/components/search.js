@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Input } from 'antd';
+import { Input, Row, Col } from 'antd';
 const { Search } = Input;
 
 const PokemonSearch = props => {
@@ -9,12 +9,16 @@ const PokemonSearch = props => {
 
     return (
         <div>
-            <Search
-                placeholder="input search text"
-                enterButton="Search"
-                style={{ width: '50%' }}
-                onSearch={(value) => {setPokemonInput(value)}}
-            />
+            <Row justify="center">
+                <Col span={12}>
+                    <Search
+                        placeholder="input search text"
+                        enterButton="Search"
+                        style={{ width: '50%' }}
+                        onSearch={(value) => {setPokemonInput(value)}}
+                    />
+                </Col>
+            </Row>
         </div>
     )
 }

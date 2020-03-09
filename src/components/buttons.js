@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Button } from 'antd';
+import { Button, Row, Col } from 'antd';
 
 const Buttons = props => {
     const { pokemonTypes, setPokemonFilter } = props;
@@ -9,9 +9,10 @@ const Buttons = props => {
         <Button key={index} 
             type="primary"
             onClick={() => setPokemonFilter(pokemonType.name)}
-            >
+        >
             {pokemonType.name}
         </Button>
+        
     ))
 }
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState} from 'react'
-import { Card } from 'antd';
+import { Card, Col, Row } from 'antd';
 import { getPokemon } from '../api/pokemon';
 
 const PokemonCard = props => {
@@ -18,13 +18,15 @@ const PokemonCard = props => {
 
     if(pokemon.data){
         return  (
-            <Card
-                hoverable
-                style={{ width: 240 }}
-                cover={<img alt="example" src={pokemon.data.sprites.front_default}/>}
-                >
-                <Meta title={pokemon.data.name} description={pokemon.data.name} />
-            </Card>
+            <Col span={6}>
+                <Card
+                    hoverable
+                    style={{ width: 240 }}
+                    cover={<img alt="example" src={pokemon.data.sprites.front_default}/>}
+                    >
+                    <Meta title={pokemon.data.name} description={pokemon.data.name} />
+                </Card>
+            </Col>
         ) 
     }
 

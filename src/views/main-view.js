@@ -6,6 +6,7 @@ import Buttons from '../components/buttons';
 import PokemonCard from '../components/card';
 import PokemonSearch from '../components/search';
 import PokemonHeader from '../components/header';
+import { Layout, Row, Col } from 'antd';
 
 
 const MainView = props => {
@@ -51,18 +52,24 @@ const MainView = props => {
             <PokemonSearch
                 setPokemonInput={setPokemonInput}
             />
-            <Buttons
-                setPokemonFilter={setPokemonFilter}
-                pokemonTypes={pokemonTypes}
-            />
-            {
-                pokemonFilterResult.map((pokemon, index) => (
-                    <PokemonCard
-                        key={index}
-                        pokemon={pokemon}
+            <Row justify="center">
+                <Col span={20}>
+                    <Buttons
+                        setPokemonFilter={setPokemonFilter}
+                        pokemonTypes={pokemonTypes}
                     />
-                ))
-            }
+                    <Row>
+                        {
+                            pokemonFilterResult.map((pokemon, index) => (
+                                <PokemonCard
+                                    key={index}
+                                    pokemon={pokemon}
+                                />
+                            ))
+                        }
+                    </Row>
+                </Col>
+            </Row>
         </Fragment>
     )
 }
