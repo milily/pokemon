@@ -52,13 +52,14 @@ const MainView = props => {
             <PokemonSearch
                 setPokemonInput={setPokemonInput}
             />
-            <Row justify="center">
+            <Row justify="center" align="middle">
                 <Col span={20}>
                     <Buttons
                         setPokemonFilter={setPokemonFilter}
                         pokemonTypes={pokemonTypes}
+                        className="pokemon-button"
                     />
-                    <Row>
+                    <Row align="center">
                         {
                             pokemonFilterResult.map((pokemon, index) => (
                                 <PokemonCard

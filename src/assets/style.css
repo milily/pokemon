@@ -1,3 +1,19 @@
 .site-page-header {
     border: 1px solid rgb(235, 237, 240);
 }
+
+.search-bar{
+    padding: 20px;
+}
+
+.type-button{
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.pokemon-button{
+    display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+    text-align:center !important;
+}

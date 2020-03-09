@@ -9,6 +9,7 @@ const Buttons = props => {
         <Button key={index} 
             type="primary"
             onClick={() => setPokemonFilter(pokemonType.name)}
+            className="type-button"
         >
             {pokemonType.name}
         </Button>

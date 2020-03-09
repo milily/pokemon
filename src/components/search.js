@@ -10,12 +10,13 @@ const PokemonSearch = props => {
     return (
         <div>
             <Row justify="center">
-                <Col span={12}>
+                <Col span={6}>
                     <Search
                         placeholder="input search text"
                         enterButton="Search"
-                        style={{ width: '50%' }}
+                        style={{ width: '100%' }}
                         onSearch={(value) => {setPokemonInput(value)}}
+                        className="search-bar"
                     />
                 </Col>
             </Row>

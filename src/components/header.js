@@ -6,7 +6,7 @@ const PokemonHeader = props => {
     return (
         <PageHeader
             className="site-page-header"
-            title="Pokemon"
+            title="Pokémon"
             subTitle="Gotta Catch 'Em All"
         />
     )
