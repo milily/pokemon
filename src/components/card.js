@@ -30,7 +30,7 @@ const PokemonCard = props => {
                     style={{ width: 240 }}
                     cover={<img alt="example" src={pokemon.data.sprites.front_default}/>}
                     >
-                    <Meta title={pokemon.data.name} description={pokemon.data.abilities[0].ability.name} />
+                    <Meta title={pokemon.data.name} description={`Ataques: ${pokemon.data.abilities[0].ability.name}`} />
                 </Card>
             </Col>
         ) 
