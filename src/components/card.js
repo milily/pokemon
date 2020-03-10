@@ -18,9 +18,10 @@ const PokemonCard = props => {
 
     if(pokemon.data){
         return  (
-            <Col span={6}>
+            <Col span={12}>
                 <Card
                     hoverable
+                    className="pokemon-card"
                     style={{ width: 240 }}
                     cover={<img alt="example" src={pokemon.data.sprites.front_default}/>}
                     >

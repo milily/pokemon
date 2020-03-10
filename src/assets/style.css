@@ -17,3 +17,11 @@
   justify-content: center !important;
     text-align:center !important;
 }
+
+.ant-card{
+    margin: 20px !important;
+}
+
+.ant-row{
+    margin-top: 20px;
+}
